@@ -1,0 +1,36 @@
+{
+  "name": "foor",
+  "version": "0.0.0",
+  "description": "Foorify your strings.",
+  "homepage": "https://github.com/kotarac/foor",
+  "bugs": "https://github.com/kotarac/foor/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kotarac/foor.git"
+  },
+  "keywords": [
+    "language",
+    "machinelearning",
+    "dictionary"
+  ],
+  "author": {
+    "name": "Stipe Kotarac",
+    "email": "stipe@kotarac.net",
+    "url": "https://github.com/kotarac"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "coffee -b -o . src/index.coffee",
+    "dev": "coffee -w -b -o . src/index.coffee"
+  }
+}
