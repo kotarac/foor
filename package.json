@@ -22,17 +22,17 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "iced-coffee-script": "^108.0.11",
-    "icedtape": "^1.0.0"
+    "coffeescript": "^2.4.1",
+    "coffeetape": "^2.0.0"
   },
   "engines": {
-    "node": ">=4",
-    "npm": ">=2"
+    "node": ">=6",
+    "yarn": ">=1"
   },
   "scripts": {
-    "prepublish": "npm run build",
-    "build": "iced -b -o . src/index.coffee",
-    "dev": "iced -w -b -o . src/index.coffee",
-    "test": "NODE_PATH=. icedtape test/*.coffee"
+    "prepublish": "yarn run build",
+    "build": "coffee -b -o . src/index.coffee",
+    "dev": "coffee -w -b -o . src/index.coffee",
+    "test": "NODE_PATH=. coffeetape test/*.coffee"
   }
 }
